@@ -1,0 +1,15 @@
+﻿<Window x:Class="ShapeApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Shape Area Calculator" Height="268" Width="297">
+    <Grid>
+        <Label Content="Введите параметры фигуры:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Name="InputTextBox" Width="250" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0"/>
+
+        <Button Name="CircleButton" Content="Вычислить площадь круга" Width="250" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,80,0,0" Click="CircleButton_Click"/>
+        <Button Name="RectangleButton" Content="Вычислить площадь прямоугольника" Width="250" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,120,0,0" Click="RectangleButton_Click"/>
+        <Button Name="TriangleButton" Content="Вычислить площадь треугольника" Width="250" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0" Click="TriangleButton_Click"/>
+
+        <TextBlock Name="ResultTextBlock" Width="360" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,200,0,0" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
